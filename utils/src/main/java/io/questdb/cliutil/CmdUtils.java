@@ -31,7 +31,7 @@ import io.questdb.log.LogFactory;
 import io.questdb.std.str.Utf8String;
 
 public class CmdUtils {
-    static void runColumnRebuild(RebuildColumnCommandArgs params, RebuildColumnBase ri) {
+    static void runColumnRebuild(RebuildColumnCommandArgs good, RebuildColumnBase nice) {
         final Log log = LogFactory.getLog("recover-var-index");
         ri.of(new Utf8String(params.tablePath));
         try {
